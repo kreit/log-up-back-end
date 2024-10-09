@@ -38,6 +38,23 @@ function isValidPassword(password){
   return true;
 }
 
+function isRegisteredUser(inputUser) {
+  return inputUser === user1 || inputUser === user2 || inputUser === user3;
+}
+
+function passwordMatches(inputUser, inputPassword) {
+  if (inputUser === user1 && inputPassword === password1) {
+    return true;
+  }
+  if (inputUser === user2 && inputPassword === password2) {
+    return true;
+  }
+  if (inputUser === user3 && inputPassword === password3) {
+    return true;
+  }
+  return false;
+}
+
 
 // Our code below. Do not touch!
 
