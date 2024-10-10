@@ -14,13 +14,10 @@ const password3 = "supToThis"
 // **YOUR** code below. Pass those tests!
 
 function isValidEmail(email) {
-  const validEndings = ['.prsvr@gmail.com', '@perseverenow.org'];
-  
-  
-  for (const ending of validEndings) {
-    if (email.endsWith(ending) && email.length > ending.length) {
-      return true;
-    }
+  if (email.endsWith('.prsvr@gmail.com')) {
+    return email.length > '.prsvr@gmail.com'.length;
+  } else if (email.endsWith('@perseverenow.org')) {
+    return email.length > '@perseverenow.org'.length;
   }
   return false;
 }
